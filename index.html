@@ -5,12 +5,13 @@
 	<link rel="icon" href="logo.ico">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/typeit@5.9.0/dist/typeit.min.js" /></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
@@ -56,12 +57,19 @@
 		color: #decac5;
 	}
 
+	.icon:hover {
+		-webkit-animation: bounce 1s;
+		animation: bounce 1s;
+	}
+
 
 </style>
 
 <title>Karim Eldegwy</title>
 </head>
 <body>
+
+	<!--++++++++  Nav-Menue  ++++++++-->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 		<a class="navbar-brand nav-title" href="#">Eldegwy</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,13 +78,16 @@
 		<div class="collapse navbar-collapse" id="navbarText">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-link bouncyScroll" id="head" href="#header">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Features</a>
+					<a class="nav-link bouncyScroll" href="#aboutMe">About</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Pricing</a>
+					<a class="nav-link bouncyScroll" href="#projects">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link bouncyScroll" href="#contact">Contact</a>
 				</li>
 			</ul>
 			<span class="navbar-text animated fadeInRight">
@@ -84,17 +95,119 @@
 			</span>
 		</div>
 	</nav> 
-	<section >
+
+	<!--++++++++  Header  ++++++++-->
+	<section id="header">
 		<div class="img-cont">
-			<img src="logo.png" class="zoom-tilt img animated tada" onclick="">
+			<img src="logo.png" id="bigImg" class=" img animated tada" onclick="">
 			<h1 id="example6" class="auto-text"></h1>
 
 		</div>
 		
 	</section><br><br>
 
+	<!--++++++++  About-Me  ++++++++-->
+	<section id="aboutMe">
+		<h1>	Test</h1>
+		<h1>	Test</h1>
+		<h1>	Test</h1>
+		<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.		
+		</p>
+	</section>
 
-	<section>
+	<!--++++++++  P-Skills  ++++++++-->
+	<section id="pSkills">
+		<h1>	Test</h1>
+		<h1>	Test</h1>
+		<h1>	Test</h1>
+		<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.		
+		</p>
+	</section>
+
+	<!--++++++++  Projects  ++++++++-->
+	<section id="projects">	
+		<h1>	Test</h1>
+		<h1>	Test</h1>
+		<h1>	Test</h1>
+		<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.		
+		</p>
+	</section>
+
+	<!--++++++++  Volunteer Work ++++++++-->
+	<section id="vWork">	
+		<h1>	Test</h1>
+		<h1>	Test</h1>
+		<h1>	Test</h1>
+		<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.		
+		</p>
+	</section>
+
+	<!--++++++++ Contact Me  ++++++++-->
+	<section id="contact">	
+		<h1>	Test</h1>
+		<h1>	Test</h1>
+		<h1>	Test</h1>
+		<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.		
+		</p>
+	</section>
+
+	<!--++++++++Footer++++++++-->
+	<section id="footer">
 		<div>
 			<div class="center">
 				<a href="" class="link-social"><i class="fab fa-facebook-square fa-3x" fa-3x"></i></a>
@@ -110,7 +223,7 @@
 
 
 	<!-- Scripts -->
-	
+
 	<script type="text/javascript">
 		new TypeIt('#example6', {
 			speed: 70,
@@ -128,7 +241,10 @@
 		.type('I\'m Karim Eldegwy')
 		.pause(1000)
 		.delete()
-		.type('Computer Engineer')
+		.type('Computer Engineeeee')
+		.pause(500)
+		.delete(3)
+		.type('r')
 		.pause(1000)
 		.delete()
 		.type('From Egypt')
@@ -143,6 +259,33 @@
 		.type('Karim Eldegwy');
 
 
+	</script>
+	<script type="text/javascript">
+		//Wait for intro animation to complete
+		$("#bigImg").on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
+			$(this).removeClass("animated tada");
+		});
+
+		//On mouse entering image vacinity do the wobble animation
+		$("#bigImg").mouseenter(function(event) {
+			$(this).addClass("animated wobble");
+		});
+
+		//Wait for the wobble to finish and rest
+		$("#bigImg").on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
+			$(this).removeClass("animated wobble");
+		});
+	</script>
+
+	<script type="text/javascript">
+		//Detect a menue click
+		$('a.bouncyScroll').on('click', function(event) {
+			$('html, body').stop().animate({
+				//Move to href location
+				scrollTop: $($(this).attr('href')).offset().top + 20
+			}, 1100, 'easeInOutExpo'); //Using easing plugin
+			event.preventDefault();
+		});
 	</script>
 </body>
 </html>
