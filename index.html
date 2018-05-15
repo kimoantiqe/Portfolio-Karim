@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|IBM+Plex+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css3-timeline-2/css/style.css">
 	<style type="text/css">
 	* { margin:0; padding:0; box-sizing:border-box; }
 
@@ -35,7 +36,7 @@
 	.content-body{
 		width: 90%;
 		margin: auto;
-        background: radial-gradient(#fefaf7, #f0f0f0);
+		background: radial-gradient(#fefaf7, #f0f0f0);
 	}
 	.img-cont{
 		width: 100%;
@@ -57,6 +58,15 @@
 		font-weight: 1;
 		margin: 0;
 		padding-bottom: 80px;
+	}
+
+	.section-title{
+font-family: 'Pacifico', cursive;
+		text-align: center;
+		color: #ab9191;
+		font-size: 40px;
+		font-weight: 1;
+		margin: 0;
 	}
 
 	.foot-text{
@@ -160,9 +170,48 @@
 	.shadow-sm{
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.14), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
 	}
+
+	.tri {
+		position: relative;
+		display: inline-block;
+		padding: 80px 0 0;
+		width: 100%;
+		overflow: hidden;
+		margin-top: -80px;
+	}
+	.tri .tri-cont {
+		background: #f5edeb;
+		padding-bottom: 160px;
+	}
+	.tri .tri-cont::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 0;
+		height: 0;
+		border-bottom: 80px solid #f5edeb;
+		border-left: 60vw solid transparent;
+		border-right: 70vw solid transparent;
+
+	}
+	.tri .tri-cont::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 0;
+		height: 0;
+		border-bottom: 80px solid  #fefaf7;
+		border-left: 60vw solid transparent;
+		border-right: 70vw solid transparent;
+
+	}
+
 }
 
 </style>
+
 
 <title>Karim Eldegwy</title>
 </head>
@@ -239,131 +288,56 @@
 	</section>
 
 	<!--++++++++  Projects  ++++++++-->
-	<section id="projects">	
-		<section class="timeline">
-			<div class="container">
-				<div class="timeline-item">
-					<div class="timeline-img"></div>
+	<div class="tri">
+		<div class="tri-cont">
+			<section id="projects">	
 
-					<div class="timeline-content js--fadeInLeft">
-						<h2>Title</h2>
-						<div class="date">1 MAY 2016</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-						<a class="bnt-more" href="javascript:void(0)">More</a>
-					</div>
-				</div> 
+				<h1 class="section-title">Projects</h1>
 
-				<div class="timeline-item">
-
-					<div class="timeline-img"></div>
-
-					<div class="timeline-content timeline-card js--fadeInRight">
-						<div class="timeline-img-header">
-							<h2>Card Title</h2>
+				<ul class="timeline">
+					<!-- Item 1 -->
+					<li>
+						<div class="direction-r">
+							<div class="flag-wrapper">
+								<span class="hexa"></span>
+								<span class="flag">Lorem ipsum.</span>
+								<span class="time-wrapper"><span class="time">Feb 2015</span></span>
+							</div>
+							<div class="desc">Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation deserunt proident.</div>
 						</div>
-						<div class="date">25 MAY 2016</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-						<a class="bnt-more" href="javascript:void(0)">More</a>
-					</div>
+					</li>
 
-				</div>   
-
-				<div class="timeline-item">
-
-					<div class="timeline-img"></div>
-
-					<div class="timeline-content js--fadeInLeft">
-						<div class="date">3 JUN 2016</div>
-						<h2>Quote</h2>
-						<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
-					</div>
-				</div>   
-
-				<div class="timeline-item">
-
-					<div class="timeline-img"></div>
-
-					<div class="timeline-content js--fadeInRight">
-						<h2>Title</h2>
-						<div class="date">22 JUN 2016</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-						<a class="bnt-more" href="javascript:void(0)">More</a>
-					</div>
-				</div>   
-
-				<div class="timeline-item">
-
-					<div class="timeline-img"></div>
-
-					<div class="timeline-content timeline-card js--fadeInLeft">
-						<div class="timeline-img-header">
-							<h2>Card Title</h2>
+					<!-- Item 2 -->
+					<li>
+						<div class="direction-l">
+							<div class="flag-wrapper">
+								<span class="hexa"></span>
+								<span class="flag">Lorem ipsum Anim.</span>
+								<span class="time-wrapper"><span class="time">Dec 2014</span></span>
+							</div>
+							<div class="desc">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
 						</div>
-						<div class="date">10 JULY 2016</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-						<a class="bnt-more" href="javascript:void(0)">More</a>
-					</div>
-				</div>   
+					</li>
 
-				<div class="timeline-item">
-
-					<div class="timeline-img"></div>
-
-					<div class="timeline-content timeline-card js--fadeInRight">
-						<div class="timeline-img-header">
-							<h2>Card Title</h2>
+					<!-- Item 3 -->
+					<li>
+						<div class="direction-r">
+							<div class="flag-wrapper">
+								<span class="hexa"></span>
+								<span class="flag">Lorem Occaecat.</span>
+								<span class="time-wrapper"><span class="time">July 2014</span></span>
+							</div>
+							<div class="desc">Lorem ipsum Minim labore Ut cupidatat quis qui deserunt proident fugiat pariatur cillum cupidatat reprehenderit sit id dolor consectetur ut.</div>
 						</div>
-						<div class="date">30 JULY 2016</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-						<a class="bnt-more" href="javascript:void(0)">More</a>
-					</div>
-				</div>  
+					</li>
+				</ul>
+			</section>
+		</div>
+	</div>
 
-				<div class="timeline-item">
-
-					<div class="timeline-img"></div>
-
-					<div class="timeline-content js--fadeInLeft">
-						<div class="date">5 AUG 2016</div>
-						<h2>Quote</h2>
-						<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
-					</div>
-				</div>   
-
-				<div class="timeline-item">
-
-					<div class="timeline-img"></div>
-
-					<div class="timeline-content timeline-card js--fadeInRight">
-						<div class="timeline-img-header">
-							<h2>Card Title</h2>
-						</div>
-						<div class="date">19 AUG 2016</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-						<a class="bnt-more" href="javascript:void(0)">More</a>
-					</div>
-				</div>  
-
-				<div class="timeline-item">
-
-					<div class="timeline-img"></div>
-
-					<div class="timeline-content js--fadeInLeft">
-						<div class="date">1 SEP 2016</div>
-						<h2>Title</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-						<a class="bnt-more" href="javascript:void(0)">More</a>
-					</div>
-				</div>   
-
-
-
-			</div>
-		</section>
-
-	</section>
 
 	<!--++++++++  Volunteer Work ++++++++-->
+
 	<section id="vWork">	
 		<h1>	Test</h1>
 		<h1>	Test</h1>
@@ -384,34 +358,37 @@
 	</section>
 
 	<!--++++++++ Contact Me  ++++++++-->
-	<section id="contact">	
+	<div class="tri">
+		<div class="tri-cont">
+			<section id="contact">	
 
-		<div class="container contact-box">
-			<h1>Get In touch</h1>
-			<form>
-				<div class="row form-group">
-					<div class="col">
-						<input type="text" class="form-control" placeholder="Name">
-					</div>
-					<div class="col">
-						<input type="text" class="form-control" placeholder="Email">
-					</div>
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Subject">
+				<div class="container contact-box">
+					<h1>Get In touch</h1>
+					<form>
+						<div class="row form-group">
+							<div class="col">
+								<input type="text" class="form-control" placeholder="Name">
+							</div>
+							<div class="col">
+								<input type="text" class="form-control" placeholder="Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Subject">
 
+						</div>
+						<div class="form-group">
+							<textarea rows="6" class="form-control" placeholder="Your Messege here.."></textarea>
+						</div>
+						<button type="submit" class="btn">Submit</button>
+					</form>
 				</div>
-				<div class="form-group">
-					<textarea rows="6" class="form-control" placeholder="Your Messege here.."></textarea>
-				</div>
-				<button type="submit" class="btn">Submit</button>
-			</form>
+
+
+
+			</section>
 		</div>
-
-		
-
-	</section>
-
+	</div>
 	<!--++++++++Footer++++++++-->
 	<section id="footer">
 		<div class="footer">
@@ -435,6 +412,10 @@
 	<!-- Scripts -->
 
 	<script type="text/javascript">
+		$(document).ready(function(){
+			$(this).scrollTop(0);
+		});
+
 		new TypeIt('#example6', {
 			speed: 70,
 			autoStart: false
@@ -500,15 +481,15 @@
 
 	<script type="text/javascript">
 		$(function() {
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        if (scroll >= 97) {
-            $("#nav-menue").addClass('bg-light shadow-sm');
-        } else {
-            $("#nav-menue").removeClass("bg-light shadow-sm");
-        }
-    });
-});
+			$(window).scroll(function() {
+				var scroll = $(window).scrollTop();
+				if (scroll >= 97) {
+					$("#nav-menue").addClass('bg-light shadow-sm');
+				} else {
+					$("#nav-menue").removeClass("bg-light shadow-sm");
+				}
+			});
+		});
 	</script>
 </body>
 </html>
