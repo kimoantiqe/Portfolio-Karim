@@ -1,6 +1,7 @@
 
 
 .hexa{
+  z-index: 3;
   border: 0px;
   float: left;
   text-align: center;
@@ -14,6 +15,7 @@
 }
 
 .hexa:before{
+  z-index: 3;
   content: ""; 
   position: absolute; 
   left: 0; 
@@ -26,6 +28,7 @@
 }
 
 .hexa:after{
+  z-index: 3;
   content: ""; 
   position: absolute; 
   left: 0; 
