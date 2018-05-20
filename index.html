@@ -26,6 +26,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
 
@@ -334,9 +335,9 @@
 		font-size: 28px;
 		border-radius: 0;
 		background-color: none;
-		    background-color: Transparent;
-    background-repeat:no-repeat;
-		  border: 2px solid  #655959;
+		background-color: Transparent;
+		background-repeat:no-repeat;
+		border: 2px solid  #655959;
 
 	}
 
@@ -348,6 +349,17 @@
 		box-shadow: 0 0 0 0.2rem #e6dada;
 	}
 
+	.about-p{
+		font-size: 18px;
+	}
+
+	.flexbox {
+		display:flex;
+		justify-content:center;
+		align-items: center;
+		flex-flow: column;
+
+	}
 </style>
 
 
@@ -408,16 +420,19 @@
 						<img src="KHE-05.png" class="img-aboutme wow bounceIn" id="img-am">
 					</div>
 					<div class="col-lg-6">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
+						<div class="flexbox">
+							<p class="about-p">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
 
-						<button class="btn btn-default btn-lg btn-title">Download CV</button>
+							<button class="btn btn-default btn-lg btn-title wow shake" onClick="window.open('https://docs.google.com/document/d/1imzUAkde-tR1Q6RSnEyfRM5ePhT_ujrV6_QZerhTFRM/edit?usp=sharing') ">Download CV</button>
+						</div>
+
 					</div>
 				</div>
 			</div>
